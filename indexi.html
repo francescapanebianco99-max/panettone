@@ -149,13 +149,10 @@ function popola(selectId, lista) {
     });
 }
 
-// Esegui quando il DOM è completamente caricato
-document.addEventListener('DOMContentLoaded', function() {
-    popola("impasto", impasti);
-    popola("sospensioni", sospensioni);
-    popola("glassa", glasse);
-    popola("decorazione", decorazioni);
-});
+popola("impasto", impasti);
+popola("sospensioni", sospensioni);
+popola("glassa", glasse);
+popola("decorazione", decorazioni);
 
 // GENERA OUTPUT
 function genera() {
