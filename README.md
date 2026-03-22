@@ -1,7 +1,5 @@
 # Grandi lievitati fatti in casa
 
-# Indicami le tue scelte per scoprire tutti gli ingredienti!!!
-
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -86,9 +84,9 @@ button:hover {
 </style>
 
 
-h1 {
+//h1 {
     <div class="subtitle">Scopri ingredienti e composizione</div>
-    text-align: center;
+    //text-align: center;
 }
 
 
