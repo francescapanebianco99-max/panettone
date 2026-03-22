@@ -1,5 +1,3 @@
-
-
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -86,7 +84,7 @@ button:hover {
 
 </head>
 
-<div class="subtitle">Scopri ingredienti e composizione</div>>
+<div class="subtitle">Scopri ingredienti e composizione</div>
 
 <div class="container">
 <h1>Componi il tuo lievitato</h1>
