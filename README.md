@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -12,18 +12,7 @@ body {
     padding: 20px;
 }
 
-.logo {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.logo img {
-    max-width: 120px;
-    filter: contrast(1.1);
-    height: auto;
-    opacity: 0.9;
-}
-
+/* CONTAINER */
 .container {
     max-width: 520px;
     margin: auto;
@@ -33,19 +22,27 @@ body {
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-h1 {
+/* LOGO */
+.logo {
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 24px;
-	display: none
+    margin-bottom: 15px;
 }
 
+.logo img {
+    width: 30%;
+    max-width: 120px;
+    height: auto;
+    opacity: 0.9;
+}
+
+/* TITOLI */
 h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 24px;
 }
 
+/* FORM */
 label {
     margin-top: 18px;
     display: block;
@@ -57,12 +54,19 @@ select {
     width: 100%;
     padding: 10px;
     margin-top: 6px;
+    margin-bottom: 5px;
     border-radius: 10px;
     border: 1px solid #ddd;
     background: #fafafa;
     font-size: 14px;
 }
 
+/* MULTISELECT */
+select[multiple] {
+    height: auto;
+}
+
+/* BUTTON */
 button {
     width: 100%;
     padding: 12px;
@@ -80,6 +84,7 @@ button:hover {
     background: #8a5234;
 }
 
+/* OUTPUT */
 .output {
     margin-top: 25px;
     background: #fdfaf7;
@@ -90,19 +95,54 @@ button:hover {
     line-height: 1.5;
 }
 
-/*  */
+/* INTRO */
 .intro {
     text-align: center;
     font-size: 13px;
     color: #6b3e26;
     line-height: 1.5;
     margin-bottom: 10px;
-	font-weight: bold;
+    font-weight: bold;
 }
 
-
 .impasto-title {
-    font-weight: regular;
+    font-weight: 600;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    select, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .output {
+        font-size: 13px;
+    }
+}
+
+/* 💻 DESKTOP GRANDE */
+@media (min-width: 900px) {
+    .container {
+        max-width: 600px;
+    }
 }
 </style>
 </head>
@@ -138,7 +178,6 @@ button:hover {
 <script>
 
 // DATABASE
-
 const impasti = [
 "Impasto tradizionale: Farina, lievito naturale, zucchero, uova, burro, miele, pasta di agrumi, vaniglia in bacche, malto, sale. Può contenere tracce di soia, senape e lupini",
 "Impasto Integrale: Farina integrale, lievito naturale, zucchero, uova, burro, miele, pasta di agrumi, vaniglia in bacche, malto, sale. Può contenere tracce di soia, senape e lupini",
@@ -201,28 +240,22 @@ function genera() {
 
     let testo = "";
 
-    
     testo += `
     <div class="intro">
         Il prodotto NON contiene conservanti<br>
-        Il lievito naturale ne preserva la qualità per non oltre due settimane <br> dalla data di produzione<br>
-       
+        Il lievito naturale ne preserva la qualità per non oltre due settimane <br> dalla data di produzione
     </div>
     `;
 
-  
     let partiImpasto = impasto.split(":");
     testo += `<span class="impasto-title">${partiImpasto[0]}:</span> ${partiImpasto[1]}<br><br>`;
 
-   
     sosp.forEach(s => testo += s + "<br>");
 
     if (sosp.length > 0) testo += "<br>";
 
-   
     if (glassa !== "Nessuna") testo += glassa + "<br>";
 
-   
     if (decorazione !== "Nessuna") testo += "<br>" + decorazione;
 
     document.getElementById("output").innerHTML = testo;
