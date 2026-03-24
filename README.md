@@ -120,7 +120,7 @@ button:hover {
         padding: 10px;}
      
           .container {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     .container {
