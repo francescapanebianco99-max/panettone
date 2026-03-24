@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: center; display: none;
 }
 
 h2 {text-align: :center}
