@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // GENERA OUTPUT
-	<div class="subtitle">Il prodotto NON contiene conservanti</div>
+
 function genera() {
     const impasto = document.getElementById("impasto").value;
 
