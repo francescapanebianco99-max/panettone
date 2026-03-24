@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -41,7 +41,12 @@ h2 {
     margin-bottom: 15px;
     font-size: 24px;
 }
-
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    display: none
+}
 /* FORM */
 label {
     margin-top: 18px;
