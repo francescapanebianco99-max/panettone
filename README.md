@@ -95,6 +95,7 @@ button:hover {
 </head>
 
 <div class="subtitle">Scopri ingredienti e composizione</div>
+<div class="subtitle">Il prodotto NON contiene conservanti. Il lievito naturale ne preserva la qualità per non oltre due settimane dalla data di produzione</div>
 
 <div class="container">
 
