@@ -10,6 +10,17 @@ body {
     margin: 0;
     padding: 20px;
 }
+.logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    max-width: 120px;
+filter: contrast(1.1);
+    height: auto;
+    opacity: 0.9;
+}
 
 .container {
     max-width: 520px;
@@ -86,7 +97,12 @@ button:hover {
 <div class="subtitle">Scopri ingredienti e composizione</div>
 
 <div class="container">
-<h1>Componi il tuo lievitato</h1>
+
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+    </div>
+
+    <h1>Componi il tuo lievitato</h1>
 
 <label>Impasto</label>
 <select id="impasto"></select>
