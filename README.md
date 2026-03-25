@@ -208,7 +208,7 @@ const sospensioni = [
 const glasse = [
 "Nessuna",
 "Glassa tradizionale: mandorle, albume, zucchero, olio di semi, amido",
-"Glassa al cioccolato: cioccolato fondente, olio di semi"
+"Glassa al cioccolato: cioccolato fondente, olio di semi",
 "Glassa cioccolato e nocciole: cioccolato fondente, olio di semi, nocciole",
 "Glassa cioccolato ruby: cioccolato ruby, olio di semi"
 ];
