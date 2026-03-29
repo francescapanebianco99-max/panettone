@@ -265,7 +265,9 @@ function genera() {
 
     testo += `
     <div class="intro">
-        Il prodotto NON contiene conservanti<br>
+        Ogni colomba è diversa, <br> ognuna fatta a mano, <br> ognuna con il suo tempo. <br>
+    Buona Pasqua!<br><br>
+    Il prodotto NON contiene conservanti<br>
         Il lievito naturale ne preserva la qualità per non oltre due settimane <br> dalla data di produzione
     </div>
     `;
@@ -283,12 +285,6 @@ function genera() {
 
     document.getElementById("output").innerHTML = testo;
 
-let finale = `
-    <div class="intro">
-        Ogni colomba è diversa, <br> ognuna fatta a mano, <br> ognuna con il suo tempo. <br>
-    Buona Pasqua!
-    </div>
-    `;
 }
 
 </script>
