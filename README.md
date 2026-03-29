@@ -282,6 +282,15 @@ function genera() {
     if (decorazione !== "Nessuna") testo += "<br>" + decorazione;
 
     document.getElementById("output").innerHTML = testo;
+
+let testo = "";
+
+    testo += `
+    <div class="intro">
+        Ogni colomba è diversa, <br> ognuna fatta a mano, <br> ognuna con il suo tempo. <br>
+    Buona Pasqua!
+    </div>
+    `;
 }
 
 </script>
